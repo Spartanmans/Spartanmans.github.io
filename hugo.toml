@@ -1,0 +1,92 @@
+defaultContentLanguage = "en"
+baseURL = 'https://Spartanmans.github.io'
+
+title = 'Bj-Space'
+theme = 'PaperMod'
+
+enableInlineShortcodes = true 
+enableEmoji = true  
+enableRobotsTXT = true
+
+languageCode = "zh"
+DefaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 3
+
+[[menu.main]]
+identifier = "archives"
+name = "时间轴"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "RSS"
+name = "RSS"
+url = "index.xml"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 40
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+series = "series"
+
+
+[params]
+DateFormat = "2006-01-02"
+ShowFullTextinRSS = true
+ShowBreadCrumbs = true
+ShowReadingTime = true
+ShowPostNavLinks = true
+
+paginate = "10"
+
+[highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+style = "darcula"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+
+[homeInfoParams]
+Title = "Hello Hugo"
+Content = """
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  - sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.            
+"""
+
+[[socialIcons]]
+name = "github"
+url = "https://github.com/adityatelange/hugo-PaperMod"
+
+[[socialIcons]]
+name = "telegram"
+url = "https://ko-fi.com/adityatelange"
+
+[[socialIcons]]
+name = "RSS"
+url = "index.xml"
+
+
+[markup.goldmark.renderer]
+hardWraps = true
