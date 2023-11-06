@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Spartanmans.github.io/sitemap.xml
