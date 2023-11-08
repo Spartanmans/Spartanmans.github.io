@@ -90,3 +90,6 @@ url = "index.xml"
 
 [markup.goldmark.renderer]
 hardWraps = true
+
+[params.assets]
+disableFingerprinting = true
