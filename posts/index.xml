@@ -6,7 +6,27 @@
     <description>Recent content in 文章 on Bj-Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 27 Oct 2023 16:08:19 +0800</lastBuildDate><atom:link href="https://Spartanmans.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Nov 2023 22:08:45 +0800</lastBuildDate><atom:link href="https://Spartanmans.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式</title>
+      <link>https://Spartanmans.github.io/posts/hugobug/</link>
+      <pubDate>Wed, 08 Nov 2023 22:08:45 +0800</pubDate>
+      
+      <guid>https://Spartanmans.github.io/posts/hugobug/</guid>
+      <description>问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提</description>
+      <content:encoded><![CDATA[<p>问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提示报错“Failed to find a valid digest in the &lsquo;integrity&rsquo; attribute for resource”。</p>
+<p>最后是在这个<a href="https://stackoverflow.com/questions/65040931/hugo-failed-to-find-a-valid-digest-in-the-integrity-attribute-for-resource">stackoverflow</a> 的回答中找到解决方法。</p>
+<p>将以下代码添加到hugo.yml文件，再次上传就正常显示了。<br>
+yml：</p>
+<pre tabindex="0"><code>params:
+    assets:
+        disableFingerprinting: true
+</code></pre><p>toml:</p>
+<pre tabindex="0"><code>[params.assets]
+disableFingerprinting = true
+</code></pre>]]></content:encoded>
+    </item>
+    
     <item>
       <title>2023新冠防疫指南</title>
       <link>https://Spartanmans.github.io/posts/blog-test2/</link>

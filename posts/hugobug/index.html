@@ -5,12 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>文章 | Bj-Space</title>
-<meta name="keywords" content="">
-<meta name="description" content="文章 - Bj-Space">
+<title>Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式 | Bj-Space</title>
+<meta name="keywords" content="网站">
+<meta name="description" content="问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提">
 <meta name="author" content="">
-<link rel="canonical" href="https://Spartanmans.github.io/posts/">
+<link rel="canonical" href="https://Spartanmans.github.io/posts/hugobug/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://Spartanmans.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://Spartanmans.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://Spartanmans.github.io/favicon-32x32.png">
@@ -18,7 +19,6 @@
 <link rel="mask-icon" href="https://Spartanmans.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://Spartanmans.github.io/posts/index.xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -60,14 +60,17 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="文章" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://Spartanmans.github.io/posts/" />
+</noscript><meta property="og:title" content="Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式" />
+<meta property="og:description" content="问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Spartanmans.github.io/posts/hugobug/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-08T22:08:45+08:00" />
+<meta property="article:modified_time" content="2023-11-08T22:08:45+08:00" />
+
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="文章"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式"/>
+<meta name="twitter:description" content="问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提"/>
 
 
 <script type="application/ld+json">
@@ -80,13 +83,48 @@
       "position":  2 ,
       "name": "文章",
       "item": "https://Spartanmans.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式",
+      "item": "https://Spartanmans.github.io/posts/hugobug/"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式",
+  "name": "Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式",
+  "description": "问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提",
+  "keywords": [
+    "网站"
+  ],
+  "articleBody": "问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提示报错“Failed to find a valid digest in the ‘integrity’ attribute for resource”。\n最后是在这个stackoverflow 的回答中找到解决方法。\n将以下代码添加到hugo.yml文件，再次上传就正常显示了。\nyml：\nparams: assets: disableFingerprinting: true toml:\n[params.assets] disableFingerprinting = true ",
+  "wordCount" : "173",
+  "inLanguage": "en",
+  "datePublished": "2023-11-08T22:08:45+08:00",
+  "dateModified": "2023-11-08T22:08:45+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://Spartanmans.github.io/posts/hugobug/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bj-Space",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://Spartanmans.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -128,7 +166,7 @@
         <ul id="menu">
             <li>
                 <a href="https://Spartanmans.github.io/posts/" title="文章">
-                    <span class="active">文章</span>
+                    <span>文章</span>
                 </a>
             </li>
             <li>
@@ -154,71 +192,56 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://Spartanmans.github.io">Home</a></div>
-  <h1>
-    文章
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-11-08 22:08:45 +0800 CST'>2023-11-08</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式" href="https://Spartanmans.github.io/posts/hugobug/"></a>
-</article>
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://Spartanmans.github.io">Home</a>&nbsp;»&nbsp;<a href="https://Spartanmans.github.io/posts/">文章</a></div>
+    <h1 class="post-title">
+      Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式
+    </h1>
+    <div class="post-meta"><span title='2023-11-08 22:08:45 +0800 CST'>2023-11-08</span>&nbsp;·&nbsp;1 min
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>2023新冠防疫指南
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、回家消杀流程 进入入户缓冲区（角钢框架＋防紫外线遮光贴膜搭建），站在门口的消毒脚踏盆内脱鞋换成室内鞋，然后把快递、外衣外裤、口罩、帽子、眼...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-27 16:08:19 +0800 CST'>2023-10-27</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to 2023新冠防疫指南" href="https://Spartanmans.github.io/posts/blog-test2/"></a>
-</article>
+</div>
+  </header> 
+  <div class="post-content"><p>问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提示报错“Failed to find a valid digest in the &lsquo;integrity&rsquo; attribute for resource”。</p>
+<p>最后是在这个<a href="https://stackoverflow.com/questions/65040931/hugo-failed-to-find-a-valid-digest-in-the-integrity-attribute-for-resource">stackoverflow</a> 的回答中找到解决方法。</p>
+<p>将以下代码添加到hugo.yml文件，再次上传就正常显示了。<br>
+yml：</p>
+<pre tabindex="0"><code>params:
+    assets:
+        disableFingerprinting: true
+</code></pre><p>toml:</p>
+<pre tabindex="0"><code>[params.assets]
+disableFingerprinting = true
+</code></pre>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>SHTF生存指南
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、饮用水 雨水收集器、蒸馏水收集器、净水片、车载反渗透净水器、户外便携净水器（lifesaver、miniwell）、紫外线消毒器、臭氧消毒...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-10-27 16:06:00 +0800 CST'>2023-10-27</span>&nbsp;·&nbsp;6 min</footer>
-  <a class="entry-link" aria-label="post link to SHTF生存指南" href="https://Spartanmans.github.io/posts/blog-test/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>火灾生存指南
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、家庭火灾 1. 家庭防火装备 消防腰斧、断线钳、消防撬棍、手电筒、燃气泄漏报警器、阻燃隔热服、防火斗篷、消防防毒面具，高楼缓降逃生器、逃生软梯、...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-27 16:00:51 +0800 CST'>2023-10-27</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to 火灾生存指南" href="https://Spartanmans.github.io/posts/second/"></a>
-</article>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://Spartanmans.github.io/tags/%E7%BD%91%E7%AB%99/">网站</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://Spartanmans.github.io/posts/blog-test2/">
+    <span class="title">Next »</span>
+    <br>
+    <span>2023新冠防疫指南</span>
+  </a>
+</nav>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>水灾生存指南
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、饮用水 雨水收集器、蒸馏水收集器、净水片、车载反渗透净水器、户外便携净水器（lifesaver、miniwell）、紫外线消毒器、臭氧消毒...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-26 20:04:28 +0800 CST'>2023-10-26</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to 水灾生存指南" href="https://Spartanmans.github.io/posts/first/"></a>
+
+  
+  <h4>Comments:</h4>
+  <div id="cusdis_thread" data-host="https://cusdis.com"
+    data-app-id="c94fe1b1-e0a5-4c90-bd01-ad7d2f9eae4e" # 把自己的Embed code贴进这里！
+    data-page-id="90a61f50cbe8fd0796af1d690b5b568f" data-page-url="https://Spartanmans.github.io/posts/hugobug/"
+    data-page-title="Hugo Papermod 部署问题：上传 GitHub Page 后不显示CSS样式"></div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+
+
+  </footer>
 </article>
     </main>
     
