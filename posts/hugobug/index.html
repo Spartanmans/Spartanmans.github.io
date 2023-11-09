@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh-cn" dir="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,7 +105,7 @@
   ],
   "articleBody": "问题挺多的，尤其是上传到GitHub这个流程，不过大多很快就搜出解决方法来了。最坑的就是上传成功后，访问网站无法正常显示CSS样式，F12提示报错“Failed to find a valid digest in the ‘integrity’ attribute for resource”。\n最后是在这个stackoverflow 的回答中找到解决方法。\n将以下代码添加到hugo.yml文件，再次上传就正常显示了。\nyml：\nparams: assets: disableFingerprinting: true toml:\n[params.assets] disableFingerprinting = true ",
   "wordCount" : "173",
-  "inLanguage": "en",
+  "inLanguage": "zh-cn",
   "datePublished": "2023-11-08T22:08:45+08:00",
   "dateModified": "2023-11-08T22:08:45+08:00",
   "mainEntityOfPage": {
@@ -223,8 +223,13 @@ disableFingerprinting = true
       <li><a href="https://Spartanmans.github.io/tags/%E7%BD%91%E7%AB%99/">网站</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="https://Spartanmans.github.io/posts/newfirst/">
+    <span class="title">« </span>
+    <br>
+    <span>测试 Newfirst</span>
+  </a>
   <a class="next" href="https://Spartanmans.github.io/posts/blog-test2/">
-    <span class="title">Next »</span>
+    <span class="title"> »</span>
     <br>
     <span>2023新冠防疫指南</span>
   </a>
